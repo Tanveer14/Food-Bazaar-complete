@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="bodybg" stylesheets="@background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FirstPageController">
+   <children>
+      <Button fx:id="StockButton" layoutX="110.0" layoutY="344.0" mnemonicParsing="false" onAction="#StockButtonClicked" prefHeight="28.0" prefWidth="136.0" text="View Stock" textAlignment="CENTER" textFill="ORANGE">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="OrderCheckButton" layoutX="332.0" layoutY="344.0" mnemonicParsing="false" onAction="#OrderCheckButtonClicked" prefHeight="28.0" prefWidth="136.0" text="Check Orders" textAlignment="CENTER" textFill="ORANGE">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="AddProductButton" layoutX="575.0" layoutY="344.0" mnemonicParsing="false" onAction="#AddProductButtonClicked" prefHeight="25.0" prefWidth="136.0" text="Update Products" textAlignment="CENTER" textFill="ORANGE">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="41.0" layoutY="537.0" text="Total Earnings :">
+         <font>
+            <Font name="Agency FB Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="EarnLabel" layoutX="192.0" layoutY="538.0">
+         <font>
+            <Font name="Agency FB Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

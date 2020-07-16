@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="bgloginimage" stylesheets="@bglogin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OwnerInController">
+   <children>
+      <VBox layoutX="268.0" layoutY="187.0" prefHeight="399.0" prefWidth="300.0" spacing="15.0">
+         <children>
+            <ComboBox fx:id="type" editable="true" onAction="#productTypeSelected" prefHeight="40.0" prefWidth="300.0" promptText="Product Type" />
+            <ComboBox fx:id="name" disable="true" editable="true" onAction="#ItemTypeSelected" prefHeight="40.0" prefWidth="300.0" promptText="Product Name" />
+            <Label fx:id="ItemshowLabel" prefHeight="71.0" prefWidth="300.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <TextField fx:id="quantity" prefHeight="40.0" prefWidth="300.0" promptText="Product Quantity" />
+            <ComboBox fx:id="unit_type" editable="true" prefHeight="40.0" prefWidth="300.0" promptText="Product Unit Type" />
+            <TextField fx:id="unit_price" prefHeight="40.0" prefWidth="300.0" promptText="Update Unit Price" />
+            <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateButtonClicked" prefHeight="33.0" prefWidth="73.0" text="Update" textFill="ORANGE">
+               <VBox.margin>
+                  <Insets left="110.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Agency FB Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="CaptionLabel" layoutX="257.0" layoutY="90.0" prefHeight="60.0" text="Update Your Products" textFill="#ffa500fc" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font name="Agency FB Bold" size="40.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </Label>
+      <Button fx:id="HomeButton" layoutX="86.0" layoutY="50.0" mnemonicParsing="false" onAction="#HomeButtonClicked" text="Home" textFill="ORANGE">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Button>
+      <ComboBox fx:id="OutOfStockBox" disable="true" layoutX="610.0" layoutY="243.0" prefHeight="40.0" prefWidth="150.0" promptText="Out of Stock" />
+   </children>
+</AnchorPane>
